@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety : Near Miss Incident Report</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="nav-logo">VIZAG STEEL - Pride of Steel</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#" class="active">Incidents</a>
+            <a href="#">Reports</a>
+            <a href="login.html">Logout</a>
+        </div>
+    </div>
+
+    <div class="user-info-bar">
+        <span><strong>UserID:</strong> 123877</span>
+        <span><strong>Role:</strong> Safety Officer</span>
+        <span><strong>Dept:</strong> 8001</span>
+    </div>
+
+    <div class="form-container">
+        <h3 class="form-title">Safety : Near Miss Incident Report</h3>
+        
+        <form id="incidentForm">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>Near Miss Incident Date *</label>
+                    <input type="date" required>
+                </div>
+                <div class="form-group">
+                    <label>Near Miss Incident Time * (HH:MM)</label>
+                    <input type="time" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Department *</label>
+                    <select required>
+                        <option value="">[Select Dept.]</option>
+                        <option value="SED">SED (Safety Engineering)</option>
+                        <option value="WORKS">WORKS</option>
+                        <option value="IT-ERP">IT & ERP</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Location *</label>
+                    <input type="text" placeholder="Enter Location" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Section *</label>
+                    <input type="text" placeholder="Enter Section" required>
+                </div>
+                <div class="form-group">
+                    <label>Equipment</label>
+                    <input type="text" placeholder="Enter Equipment (Optional)">
+                </div>
+            </div>
+
+            <div class="form-group full-width" style="margin-top: 15px;">
+                <label>Incident Type *</label>
+                <select required>
+                    <option value="">[Select Type]</option>
+                    <option value="Slip/Fall">Slip and Fall</option>
+                    <option value="Spillage">Spillage</option>
+                    <option value="Fire">Fire hazard</option>
+                    <option value="Explosion">Explosion hazard</option>
+                </select>
+            </div>
+
+            <div class="form-group full-width" style="margin-top: 15px;">
+                <label>Near Miss Incident Description * (Max 300 characters)</label>
+                <textarea id="incidentDesc" rows="4" maxlength="300" placeholder="Describe what happened..." required></textarea>
+                <div class="char-counter"><span id="charCount">0</span> / 300 characters</div>
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid #ccc; margin: 20px 0;">
+
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>Employee No:</label>
+                    <input type="text" value="123877" readonly class="readonly-field">
+                </div>
+                <div class="form-group">
+                    <label>Employee Name:</label>
+                    <input type="text" value="SSV VARMA MANDAPATI" readonly class="readonly-field">
+                </div>
+                <div class="form-group">
+                    <label>Phone:</label>
+                    <input type="text" placeholder="Landline phone">
+                </div>
+                <div class="form-group">
+                    <label>Mobile No:</label>
+                    <input type="text" placeholder="Mobile phone">
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <button type="submit" class="btn btn-submit">Submit</button>
+                <button type="reset" class="btn btn-reset">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

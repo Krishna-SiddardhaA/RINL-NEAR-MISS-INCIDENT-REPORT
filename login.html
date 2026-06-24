@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RINL - Near Miss Reporting System Login</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="login-container">
+    <h2 class="header-title">Near Miss Reporting System</h2>
+    <p style="text-align: center; font-size: 12px; color: #666;">Login using EIS credentials</p>
+    
+    <form action="login-endpoint" method="POST">
+        <div class="form-group">
+            <label for="userId">UserID (Employee No.):</label>
+            <input type="text" id="userId" name="userId" placeholder="Enter Employee No." required> <br> <br>
+        </div>
+        
+        <div class="form-group">
+            <label for="password">Password (EIS Password):</label>
+            <input type="password" id="password" name="password" placeholder="Enter EIS Password" required> <br> <br>
+        </div>
+        
+        <button type="submit" class="btn">Login</button>
+
+        <input type="reset" class="reset" value="Reset">
+    </form>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
